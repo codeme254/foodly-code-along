@@ -24,6 +24,7 @@ body {
 :root {
   --color-primary: #ff885b;
   --color-black: #111;
+  --color-white: #fff;
 }
 
 /* header stylings */
@@ -73,3 +74,65 @@ body {
   color: var(--color-primary);
 }
 /* end of header stylings */
+
+/* hero section stylings */
+.hero-section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(./assets/hero-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.textbox {
+  text-align: center;
+  width: 60%;
+}
+
+@media screen and (max-width: 75em) {
+  .textbox {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  .textbox {
+    width: 98%;
+  }
+}
+
+.hero-title {
+  color: var(--color-white);
+  font-size: 7rem;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 43.75em) {
+  .hero-title {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 31.25em) {
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+.hero-link {
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  background-color: var(--color-primary);
+  padding: 2rem 3rem;
+  border-radius: 100px;
+  display: inline-block;
+  margin-top: 4rem;
+}
+/* end of hero section stylings */
