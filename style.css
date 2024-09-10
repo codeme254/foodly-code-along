@@ -20,3 +20,56 @@ body {
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
 }
+
+:root {
+  --color-primary: #ff885b;
+  --color-black: #111;
+}
+
+/* header stylings */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 43.75em) {
+  .header {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.logo-text {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .header-nav-list {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+.header-nav-link {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--color-black);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.header-nav-link:hover {
+  color: var(--color-primary);
+}
+/* end of header stylings */
