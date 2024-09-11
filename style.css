@@ -90,6 +90,28 @@ body {
 }
 /* end of header stylings */
 
+/* scroll to top button */
+.scroll-to-top {
+  text-decoration: none;
+  background-color: var(--color-secondary);
+  --size: 5rem;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  border-radius: 50%;
+
+  position: fixed;
+  bottom: 2rem;
+  right: 4rem;
+  z-index: 1000000000000;
+}
+/* end of scroll to top button */
+
 /* hero section stylings */
 .hero-section {
   height: 90vh;
