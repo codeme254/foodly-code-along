@@ -30,6 +30,7 @@ body {
   --color-white: #fff;
   --color-grey-light: #b1a199;
   --color-grey-light-2: #a4a4a4;
+  --color-grey-light-3: #666;
   --color-black-text: #333;
 }
 
@@ -378,6 +379,96 @@ body {
   color: var(--color-black-text);
 }
 /* end of chefs section styling */
+
+/* testimonies section stylings */
+.testimonies-section {
+  padding: 2rem;
+  margin-top: 10rem;
+}
+
+.testimonies-section-container {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.video {
+  width: 45%;
+}
+
+.vid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonies {
+  width: 55%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 56.25em) {
+  .testimonies-section-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .testimonies {
+    width: 100%;
+    order: -1;
+    flex-wrap: wrap;
+  }
+}
+
+.testimony-card {
+  width: 45%;
+  padding: 1rem;
+  box-shadow: offx offy blurradius shadow-color;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 37.5em) {
+  .testimonies {
+    flex-direction: column;
+  }
+
+  .testimony-card {
+    width: 100%;
+  }
+}
+
+.testimony-text {
+  line-height: 1.7;
+  color: var(--color-grey-light-3);
+  margin-bottom: 1rem;
+}
+
+.testimony-customer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimony-avartar {
+  --size: 6rem;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+}
+
+.customer-name {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+/* end of testimonies section stylings */
 
 /* footer stylings */
 .footer {
