@@ -24,6 +24,7 @@ body {
 
 :root {
   --color-primary: #ff885b;
+  --color-primary-light: #ffe5cf;
   --color-secondary: #557c56;
   --color-black: #111;
   --color-white: #fff;
@@ -237,3 +238,77 @@ body {
   }
 }
 /* end of about section stylings */
+
+/* menu section stylings */
+.menu-items-container {
+  padding-inline: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  justify-content: center;
+  margin-block: 2rem;
+}
+
+.menu-card {
+  width: 35rem;
+  background-color: var(--color-primary-light);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.menu-card-image {
+  width: 100%;
+  height: 25rem;
+}
+
+.menu-card-details {
+  padding: 1rem;
+}
+
+.menu-card-title {
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+.menu-card-description {
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.menu-card-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item-cta {
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-transform: capitalize;
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item-price {
+  text-transform: uppercase;
+  font-size: 2.4rem;
+}
+
+.menu-section-link {
+  text-decoration: none;
+  background-color: var(--color-primary);
+  padding: 2rem 2.5rem;
+  color: var(--color-white);
+  border-radius: 100px;
+  text-transform: capitalize;
+  display: block;
+  width: max-content;
+  margin: 2rem auto;
+  margin-block-start: 4rem;
+}
+/* end of menu section stylings */
