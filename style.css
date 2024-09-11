@@ -378,3 +378,32 @@ body {
   color: var(--color-black-text);
 }
 /* end of chefs section styling */
+
+/* footer stylings */
+.footer {
+  background-color: var(--color-black);
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.footer-copyright-text {
+  color: var(--color-white);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.footer-copyright-text a {
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  padding: 1rem;
+  display: block;
+  margin: 1rem auto;
+  margin-top: 1rem;
+  width: 100%;
+}
+/* end of footer stylings */
