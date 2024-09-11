@@ -35,6 +35,11 @@ body {
   scroll-behavior: smooth;
 }
 
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
 .title {
   text-align: center;
   text-transform: uppercase;
