@@ -19,12 +19,24 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
+  color: var(--color-black-text);
 }
 
 :root {
   --color-primary: #ff885b;
+  --color-secondary: #557c56;
   --color-black: #111;
   --color-white: #fff;
+  --color-grey-light: #b1a199;
+  --color-grey-light-2: #a4a4a4;
+  --color-black-text: #333;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 4rem;
 }
 
 /* header stylings */
@@ -136,3 +148,92 @@ body {
   margin-top: 4rem;
 }
 /* end of hero section stylings */
+
+/* about section stylings */
+.about-section {
+  display: flex;
+  align-items: center;
+  padding: 8rem 2rem;
+  gap: 2rem;
+}
+
+.about-textbox {
+  width: 50%;
+}
+
+.about-stats {
+  width: 50%;
+}
+
+@media screen and (max-width: 50em) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-textbox {
+    width: 98%;
+  }
+
+  .about-stats {
+    width: 98%;
+  }
+}
+
+.about-text {
+  line-height: 1.7;
+  color: var(--color-grey-light);
+  margin-top: 2rem;
+  /* margin-block-start: 2rem; */
+}
+
+.about-link {
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  display: block;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 1rem;
+  /* margin-top: 2rem; */
+  margin-block-start: 2rem;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat {
+  border: 1px solid var(--color-grey-light-2);
+  text-align: center;
+  padding: 2rem;
+  width: 50%;
+}
+
+.stat-number {
+  font-size: 8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .stat-number {
+    font-size: 5rem;
+  }
+}
+
+.stat-description {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 37.5em) {
+  .stat-number {
+    font-size: 3rem;
+  }
+
+  .stat-description {
+    font-size: 1.2rem;
+  }
+}
+/* end of about section stylings */
